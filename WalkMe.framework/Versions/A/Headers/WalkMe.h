@@ -2,7 +2,6 @@
 //  WalkMe.h
 //  WalkMe
 //
-//  Created by Or Elmaliah on 16/01/2019.
 //  Copyright © 2019 WalkMe. All rights reserved.
 //
 

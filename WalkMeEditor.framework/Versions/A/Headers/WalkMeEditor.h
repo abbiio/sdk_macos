@@ -2,7 +2,6 @@
 //  WalkMeEditor.h
 //  WalkMeEditor
 //
-//  Created by Haim Ben Chimol on 21/01/2019.
 //  Copyright © 2019 WalkMe. All rights reserved.
 //
 

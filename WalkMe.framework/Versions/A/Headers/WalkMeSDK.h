@@ -1,32 +1,32 @@
 //
 //  WalkMe.h
-//  WalkMeSDK-macOS
 //
-//  Created by Haim Ben Chimol on 18/02/2019.
 //  Copyright © 2019 WalkMe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+@class WalkmeStartOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WalkMe : NSObject
+@interface WalkMe: NSObject
 
-+ (void)start:(NSString*)settingsURL options:(NSDictionary* _Nullable)options;
++ (void)start:(NSString *)settingsURL options:(WalkmeStartOptions *)options;
 + (void)restart;
 + (void)stop;
-// ui
+    
 + (void)openMenu;
 + (void)closeMenu;
-// functional
-+ (void)changeLanguage: (NSString*)language;
-// data
-+ (void)setWalkMeData:(NSString*)data forKey:(NSString*)key duration:(NSNumber*)duration;
-+ (void)setEndUserId:(NSString*)userId;
-// dev
-+ (void)setAnalyticsMode; // enum
-+ (void)setLoggingMode;   // enum
-+ (void)setStorageMode;   // enum
+
++ (void)changeLanguage:(NSString *)language;
+
++ (void)setWalkMeData:(NSString *)data forKey:(NSString *)key duration:(NSNumber *)duration;
++ (void)setUserId:(NSString *)userId;
+
++ (void)setAnalyticsMode;
++ (void)setLoggingMode;
++ (void)setStorageMode;
+
 @end
 
 NS_ASSUME_NONNULL_END
