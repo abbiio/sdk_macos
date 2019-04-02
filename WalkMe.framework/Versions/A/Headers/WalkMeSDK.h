@@ -5,13 +5,13 @@
 //
 
 #import <Foundation/Foundation.h>
-@class WalkmeStartOptions;
+@class WalkMeStartOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WalkMe: NSObject
 
-+ (void)start:(NSString *)settingsURL options:(WalkmeStartOptions *)options;
++ (void)start:(NSString *)settingsURL options:(nullable WalkMeStartOptions *)options;
 + (void)restart;
 + (void)stop;
     
