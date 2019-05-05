@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WalkMe"
-  s.version      = "0.3.0"
+  s.version      = "0.4.1"
   s.summary      = "WalkMe SDK for macOS"
   s.homepage     = "http://walkme.com"
   s.license      = "Commercial"
@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.preserve_paths = "WalkMe.framework"
   s.frameworks = "Cocoa", "WebKit"
   s.requires_arc = true
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"", "OTHER_LDFLAGS" => "-lObjC" }
   s.vendored_frameworks = 'WalkMe.framework'
 
 end

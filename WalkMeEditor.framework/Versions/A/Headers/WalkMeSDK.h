@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class WalkMeStartOptions;
+#import "WalkMeStartOptions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,15 +17,19 @@ NS_ASSUME_NONNULL_BEGIN
     
 + (void)openMenu;
 + (void)closeMenu;
++ (void)toggleMenu;
 
 + (void)changeLanguage:(NSString *)language;
 
 + (void)setWalkMeData:(NSString *)data forKey:(NSString *)key duration:(NSNumber *)duration;
 + (void)setUserId:(NSString *)userId;
 
-+ (void)setAnalyticsMode;
-+ (void)setLoggingMode;
-+ (void)setStorageMode;
++ (void)setAnalyticsMode:(WMAnalyticMode)mode;
++ (void)setLoggingMode:(WMLoggingMode)mode;
++ (void)setStorageMode: (WMStorageMode)storageMode;
+
++ (void)setHttpHeader:(NSString*)value forKey:(NSString*)key;
++ (void)setProxy:(NSString*)url;
 
 @end
 
