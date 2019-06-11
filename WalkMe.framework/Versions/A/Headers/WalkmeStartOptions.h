@@ -19,9 +19,9 @@ typedef NS_ENUM(NSInteger, WMAnalyticMode) {
 
 typedef NS_ENUM(NSInteger, WMLoggingMode) {
     WMLoggingModeNone = 0,
-    WMLoggingModeStdout = 1,
-    WMLoggingModeFile = 2, // curently not supported
-    WMLoggingModeWalkme = 3, // curently not supported
+    WMLoggingModeStdout = (1 << 0),
+    WMLoggingModeFile = (1 << 1),
+    WMLoggingModeWalkme = (1 << 2), // curently not supported
 };
 
 
@@ -32,4 +32,5 @@ typedef NS_ENUM(NSInteger, WMLoggingMode) {
 @property (nonatomic, assign) WMLoggingMode loggingMode;
 @property (nonatomic, assign) WMAnalyticMode analyticMode;
 @property (nonatomic, assign) WMStorageMode storageMode;
+@property (nonatomic, assign) NSString* theme;
 @end

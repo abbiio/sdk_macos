@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setAnalyticsMode:(WMAnalyticMode)mode;
 + (void)setLoggingMode:(WMLoggingMode)mode;
 + (void)setStorageMode: (WMStorageMode)storageMode;
++ (void)setWidgetTheme: (NSString*)theme;
++ (void)setWidgetVisibility: (BOOL)isVisible;
 
 + (void)setHttpHeader:(NSString*)value forKey:(NSString*)key;
 + (void)setProxy:(NSString*)url;
