@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger, WMLoggingMode) {
 
 
 @interface WalkMeStartOptions : NSObject
++ (WalkMeStartOptions*)defaults;
 
 @property (nonatomic, strong) NSString *language;
 @property (nonatomic, strong) NSString *userId;

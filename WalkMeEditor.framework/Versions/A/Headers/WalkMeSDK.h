@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WalkMe: NSObject
 
 + (void)start:(NSString *)settingsURL options:(nullable WalkMeStartOptions *)options;
-+ (void)restart;
++ (void)restart:(nullable WalkMeStartOptions *)options;
 + (void)stop;
     
 + (void)openMenu;
