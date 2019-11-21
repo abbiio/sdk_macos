@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WalkMe"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "WalkMe SDK for macOS"
   s.homepage     = "http://walkme.com"
   s.license      = "Commercial"
