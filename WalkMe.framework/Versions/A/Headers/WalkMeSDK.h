@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setAnalyticsMode:(WMAnalyticMode)mode;
 + (void)setLoggingMode:(WMLoggingMode)mode;
 + (void)setLoggingPath:(NSString*)path;
-+ (void)setStorageMode: (WMStorageMode)storageMode;
++ (void)setStorageMode: (WMStorageMode)storageMode; // If it's called, it should be done before the Walkme SDK Started
 + (void)setWidgetTheme: (NSString*)theme;
 + (void)setWidgetVisibility: (BOOL)isVisible;
 
