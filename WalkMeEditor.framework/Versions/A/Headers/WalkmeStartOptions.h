@@ -24,6 +24,11 @@ typedef NS_OPTIONS(NSInteger, WMLoggingMode) {
     WMLoggingModeWalkme = (1 << 2), // curently not supported
 };
 
+typedef NS_ENUM(NSInteger, WMNetworkAccessMethod) {
+    WMNetworkAccessMethodDirect = 0,
+    WMNetworkAccessMethodViaHost = 1
+};
+
 @interface WalkMeStartOptions : NSObject
 
 + (WalkMeStartOptions*)defaults;
@@ -34,5 +39,6 @@ typedef NS_OPTIONS(NSInteger, WMLoggingMode) {
 @property (nonatomic,assign) WMLoggingMode loggingMode;
 @property (nonatomic,assign) WMAnalyticMode analyticMode;
 @property (nonatomic,assign) WMStorageMode storageMode;
+@property (nonatomic,assign) WMNetworkAccessMethod networkAccessMethod;
 
 @end

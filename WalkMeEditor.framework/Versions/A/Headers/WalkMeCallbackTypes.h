@@ -10,7 +10,7 @@
 #define WalkMeCallbackTypes_h
 
 typedef void (^WMHTTPHeadersReady) (NSURLRequest * _Nonnull request, NSURLResponse * _Nullable response);
-typedef void (^WMHTTPProgress) (NSURLRequest * _Nonnull request, NSInteger progressValue, BOOL isFinished, NSString * _Nullable data);
+typedef void (^WMHTTPProgress) (NSURLRequest * _Nonnull request, NSInteger progressValue, BOOL isFinished, NSData * _Nullable data);
 typedef void (^WMHTTPRequestCallback) (NSURLRequest * _Nonnull request, WMHTTPHeadersReady _Nullable headersReadyCallback, WMHTTPProgress _Nullable progressCallback);
 
 #endif /* WalkMeCallbackTypes_h */
