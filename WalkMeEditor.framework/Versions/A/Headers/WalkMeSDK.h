@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)restart:(nullable WalkMeStartOptions *)options;
 + (void)stop;
 + (void)setDelegate:(id<WalkmeSDKDelegate>)delegate;
-+ (BOOL)isActive;
++ (BOOL)isRunning;
++ (BOOL)isActive:(NSError**)error;
 
 + (void)openMenu;
 + (void)closeMenu;
